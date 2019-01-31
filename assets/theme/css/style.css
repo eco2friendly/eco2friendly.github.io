@@ -99,7 +99,7 @@ section {
 
 @media (max-width: 767px) {
   .align-left, .align-center, .align-right, .mbr-section-btn, .mbr-section-title {
-    text-align: left; } }
+    text-align: center; } }
 /*! Font-weight  */
 .mbr-light {
   font-weight: 300; }
