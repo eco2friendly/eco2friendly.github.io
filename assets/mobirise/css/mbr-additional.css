@@ -1086,7 +1086,7 @@ pre {
     display: none;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   .navbar-toggleable-md .navbar-nav .dropdown-menu {
     position: static;
     float: none;
@@ -1096,7 +1096,7 @@ pre {
     padding-left: 0;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .navbar-toggleable-md {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1299,11 +1299,31 @@ body {
   background-color: #232323;
   color: #ffffff;
 }
-.jq-selectbox .jq-selectbox__trigger-arrow {
-  border-top-color: contrast(currentColor, #000000, #ffffff, 30%);
+.jq-selectbox .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:after,
+.jq-number__spin.plus:after {
+  transition: 0.4s;
+  border-top-color: currentColor;
+  border-bottom-color: currentColor;
 }
-.jq-selectbox:hover .jq-selectbox__trigger-arrow {
+.jq-selectbox:hover .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:hover:after,
+.jq-number__spin.plus:hover:after {
   border-top-color: #232323;
+  border-bottom-color: #232323;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+  color: #ffffff !important;
+  background-color: #232323 !important;
+  box-shadow: none!important;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td:hover,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+  color: #ffffff !important;
+  background: #232323 !important;
+  box-shadow: none !important;
 }
 .cid-qTkzRZLJNu .navbar {
   padding: .5rem 0;
@@ -1711,6 +1731,15 @@ body {
 }
 .cid-rm1Z5sJkJC .mbr-section-subtitle {
   color: #767676;
+  text-align: center;
+}
+.cid-ryt2fKVQML {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-ryt2fKVQML .mbr-section-subtitle {
+  color: #005aa5;
 }
 .cid-rj4A2FPubE {
   background: #ffffff;
@@ -1726,72 +1755,109 @@ body {
     width: 100% !important;
   }
 }
-.cid-rg5P7GW8Uo {
-  padding-top: 0px;
-  padding-bottom: 90px;
+.cid-ryt4Z7JHhn {
+  padding-top: 30px;
+  padding-bottom: 0px;
   background-color: #ffffff;
 }
-.cid-rg5P7GW8Uo P {
+.cid-ryt4Z7JHhn .mbr-section-subtitle {
   color: #767676;
 }
-.cid-rg9yA2ZppT {
-  padding-top: 135px;
-  padding-bottom: 135px;
-  background-image: url("../../../assets/images/aura-eventsaal-2000x1333.jpg");
-}
-.cid-rg9MElwy5E {
-  padding-top: 60px;
-  padding-bottom: 30px;
-  background-color: #ffffff;
-}
-.cid-rg9MElwy5E h4 {
-  width: 85%;
-  font-weight: 500;
-  margin-bottom: 0;
-}
-.cid-rg9MElwy5E p {
-  color: #767676;
-}
-.cid-rg9MElwy5E .card-wrapper {
-  border-top: 1px solid #efefef;
-  background-color: #ffffff;
-  position: relative;
-  justify-content: unset;
-}
-.cid-rg9MElwy5E .card-wrapper .card-box {
-  padding: 2rem 2rem 2rem 0;
-  width: 100%;
-}
-.cid-rg9MElwy5E .card-wrapper .card-box .top-line {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.cid-rg9MElwy5E .card-wrapper .card-box .bottom-line {
-  width: 85%;
-}
-@media (max-width: 767px) {
-  .cid-rg9MElwy5E .card-wrapper .card-box .bottom-line {
-    width: 100%;
-  }
-  .cid-rg9MElwy5E .card-wrapper .card-box .bottom-line p {
-    text-align: center;
-    margin: 1rem 0 0 0;
-  }
-}
-.cid-rg9MElwy5E .cost {
-  color: #232323;
+.cid-ryt4Z7JHhn H2 {
   text-align: center;
-}
-.cid-rg9MElwy5E .card-title {
   color: #005aa5;
-  text-align: left;
 }
-.cid-rg9MElwy5E .b-descr {
-  text-align: left;
+.cid-ryt4WzYeEq {
+  background: #ffffff;
+  padding-top: 0px;
+  padding-bottom: 60px;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
 }
-.cid-rg9MElwy5E H2 {
+.cid-ryt4WzYeEq .video-block {
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .cid-ryt4WzYeEq .video-block {
+    width: 100% !important;
+  }
+}
+.cid-ryt3mwTTEI {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-ryt3mwTTEI .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-ryt3mwTTEI H2 {
   text-align: center;
+  color: #005aa5;
+}
+.cid-ryt4WMABBZ {
+  background: #ffffff;
+  padding-top: 0px;
+  padding-bottom: 60px;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+}
+.cid-ryt4WMABBZ .video-block {
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .cid-ryt4WMABBZ .video-block {
+    width: 100% !important;
+  }
+}
+.cid-ryt4uyDoOf {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-ryt4uyDoOf .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-ryt4uyDoOf H2 {
+  text-align: center;
+  color: #005aa5;
+}
+.cid-ryt4W8WRTk {
+  background: #ffffff;
+  padding-top: 0px;
+  padding-bottom: 60px;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+}
+.cid-ryt4W8WRTk .video-block {
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .cid-ryt4W8WRTk .video-block {
+    width: 100% !important;
+  }
+}
+.cid-ryt4YMULtu {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-ryt4YMULtu .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-ryt4YMULtu H2 {
+  text-align: center;
+  color: #005aa5;
+}
+.cid-rys9xhWv9W {
+  background: #ffffff;
+  padding-top: 0px;
+  padding-bottom: 60px;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+}
+.cid-rys9xhWv9W .video-block {
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .cid-rys9xhWv9W .video-block {
+    width: 100% !important;
+  }
 }
 .cid-rgDy42IqzD {
   padding-top: 60px;
@@ -1844,32 +1910,6 @@ body {
 }
 .cid-rg5FeoOQgK .mbr-text {
   color: #767676;
-}
-.cid-rg9z9FYnRR {
-  padding-top: 0px;
-  padding-bottom: 60px;
-  background-color: #ffffff;
-}
-.cid-rg9z9FYnRR P {
-  color: #767676;
-}
-.cid-rm1FS2ltUu {
-  padding-top: 45px;
-  padding-bottom: 0px;
-  background-color: #efefef;
-}
-.cid-rm1FS2ltUu .mbr-text {
-  color: #767676;
-}
-.cid-rm1FS2ltUu h4 {
-  text-align: center;
-}
-.cid-rm1FS2ltUu p {
-  text-align: center;
-}
-.cid-rm1FS2ltUu .card-img span {
-  font-size: 96px;
-  color: #149dcc;
 }
 .cid-rg5EPQ0uS2 {
   background: #0a5795;
